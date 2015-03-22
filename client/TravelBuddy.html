@@ -1,14 +1,24 @@
-<head>
-  <title>TravelBuddy</title>
-</head>
-
 <body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> hello}}
+  <div id="wrapper">
+    <div id="header">
+      <img src="images/logo.png">
+    </div>
+    <div id="content">
+      <div id="sidebar">
+        sidebar
+      </div>
+      <div id="main">
+        some stuff
+      </div>
+    </div>
+    <div id="footer">
+      &copy; Copyright 2015 Pandaverse. All rights reserved.
+    </div>
+  </div>
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="trip">
+  <li>
+    <span class="text"><strong>{{destination}}</strong></span>
+  </li>
 </template>
